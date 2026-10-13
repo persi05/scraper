@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Szczegóły przedmiotu - Archiwum Przedmiotów</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/product.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><div class="header-inner"><a class="brand" href="/page/1">ARCHIWUM <span>PRZEDMIOTÓW</span></a><span class="header-note">Katalog demonstracyjny · Lab 1</span></div></header>
+  <main class="layout detail-layout">
+    <a class="back-link" href="/page/1">← Wróć do katalogu</a>
+    <p id="detail-status" class="status" role="status">Pobieranie szczegółów…</p>
+    <article id="product-detail" class="detail" hidden>
+      <div class="detail-intro"><div><span class="eyebrow" id="detail-category"></span><h1 id="detail-name"></h1><p id="detail-description"></p><div class="detail-price" id="detail-price"></div></div></div>
+      <section class="detail-panel"><h2>Parametry przedmiotu</h2><dl id="detail-fields" class="detail-grid"></dl></section>
+      <section class="detail-panel"><h2>Opis statystyk</h2><p class="stats-text" id="detail-stats"></p></section>
+      <details class="detail-panel secret-detail"><summary>Rozwiń ukryty atrybut <span>＋</span></summary><dl class="detail-grid"><div><dt>Zaklęcie</dt><dd id="detail-enchantment"></dd></div></dl></details>
+      <p class="source-note">Katalog demonstracyjny. Ceny i informacje handlowe są symulowane.</p>
+    </article>
+  </main>
+  <footer><div>Archiwum Przedmiotów <span>ID 2137</span></div></footer>
+</body>
+</html>
