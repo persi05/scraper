@@ -18,6 +18,8 @@ MIME = {".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".js
 
 
 class CatalogueHandler(BaseHTTPRequestHandler):
+    protocol_version = "HTTP/1.1"
+
     def do_GET(self) -> None:
         path = unquote(urlsplit(self.path).path)
         if path == "/":
